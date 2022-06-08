@@ -59,4 +59,27 @@ Variable name such as `val1`, `val2` and `sum` actually correspond to locations 
 
 ## Arithmetic in C
 
+| Operator(s) | Operatios(s)   |
+|-------------|----------------|
+| `( )`       | Parentheses    |
+| `*`         | Multiplication |
+| `/`         | Division       |
+| `%`         | Remainder      |
+| `+`         | Addition       |
+| `-`         | Subtraction    |
+| `=`         | Assignment     |
+
+
 ## Decision Making: Equality and Relational Operators
+
+*Example:* `basics/ifequal.c`
+
+`if` statement allows a program to make a decision based on the truth or falsity of a statement of fact called a **condition**.
+
+    if (num1 == num2){
+        printf("%d is equal to %d\n", num1, num2);
+    } // end if
+
+Some of the words we've used in C programs like `int`, `if` and `void` are **keywords** or reserved words of the language.
+
+## 
