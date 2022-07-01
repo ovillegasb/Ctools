@@ -1,4 +1,11 @@
 // File created to read an xyz file.
+/*
+TODO
+- distances
+- build conectivity
+- build molecule
+- save gro
+*/
 #include <stdio.h>
 
 int main(int argc, char *argv[]){
@@ -29,8 +36,10 @@ int main(int argc, char *argv[]){
             double z[Natoms];
 
             for (unsigned int i = 0; i < Natoms; ++i){
-                fscanf(xyzFilePtr, "%4s%lf%lf%lf", atsb, &x[i], &y[i], &z[i]);
+                fscanf(xyzFilePtr, "%4s %lf %lf %lf %*c[^\n]", atsb, &x[i], &y[i], &z[i]);
                 printf("Atom symbol: %s (xyz): (%7f, %7f, %7f)\n", atsb, x[i], y[i], z[i]);
+                break;
+                printf("Natoms T: %d, index: %d\n", Natoms, i);
             }
 
 

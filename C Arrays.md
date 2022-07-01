@@ -55,3 +55,29 @@ read a string from the keyboard into string2.
 Outputting a character array that represents a string
 
     printf("%s", string2)
+
+## Static Local Arrays and Automatic Local Arrays
+
+## Passing Arrays to Functions
+
+if array `hourlyTemperatures` has been defined as:
+
+    int hourlyTemperatures[HOURS_IN_A_DAY];
+
+the function call
+
+    modifyArray(hourlyTemperatures, HOURS_IN_A_DAY)
+
+passes array `hourlyTemperatures` and its size to function `modifyArray`.
+
+## Case Study: Computing Mean, Median and Mode Using Arrays
+
+## Multidimensional Arrays
+
+    int b[2][2] = {{1, 2}, {3, 4}}
+
+## Variable-Length Arrays
+
+For cases in which an array's size is not known at compilation time, C has **variable-lenfth arrays** (VLAs) -- that is, arrays whose lengths are defined in terms of expressions evaluated at execution time.
+
+`sizeof` Operator with VLAs. 

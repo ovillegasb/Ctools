@@ -58,3 +58,18 @@ Example passes the variable `number` by reference, the address of `number` is pa
 ## Using the const Qualifie with Pointers
 
 The **const qualifier** enable you to inform the compiler that the value of a particular variable should not be modified.
+
+## `sizeof` Operator
+
+C provides the special unary operator `sizeof` to determine the size in bytes of an array (or any other data type).
+
+The number of elements in an array also can be determinated with `sizeof`. For example
+
+    double real[22];
+    sizeof(real) / sizeof(real[0])
+
+## Pointer Expressions and Pointer Arithmetic
+
+## Relationship between Pointers and Arrays
+
+Arrays and pointers are intimately related in C and often may be used interchangeably. An  array name can be thought of as a constant pointer.
